@@ -1,0 +1,45 @@
+footer{
+    width: 100%;
+    height: 340px;
+    position: relative;
+    z-index: 10; 
+}
+footer .footerTop{}
+footer .footerTop .innerTop{}
+footer .footerTop .innerTop>ul{}
+footer .footerTop .innerTop>ul>li{}
+footer .footerTop .innerTop>ul>li>a{}
+footer .footerTop .innerTop>ul>li>a>img{}
+/* footer::after{
+    width: 100%;
+    height: 200px;
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #0f0f0f;
+    opacity: 60%;
+    z-index: 9;
+} */
+footer .footerBtm{}
+footer .footerBtm .innerBtm{
+    width: 1440px;
+}
+footer .footerBtm .innerBtm .util_link{}
+footer .footerBtm .innerBtm .util_link>p{
+    /*logo*/
+}
+footer .footerBtm .innerBtm .util_link .utilBtm{
+    /*하단유틸메뉴*/
+}
+footer .footerBtm .innerBtm .util_link .utilBtm .txt{
+    /*찾아오시는길 개인정보*/
+}
+
+footer .footerBtm .innerBtm .sns_link{}
+footer .footerBtm .innerBtm .sns_link>a{}
+footer .footerBtm .innerBtm .sns_link>a>img{}
+
+footer .footerBtm .innerBtm>address{}
+footer .footerBtm .innerBtm>address>p{}
+footer .footerBtm .innerBtm>address>p>a{}

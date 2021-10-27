@@ -1,0 +1,191 @@
+body{font-family: 'Nanum Gothic', sans-serif;}
+.res{display: none;}
+.res.w{display: block;}
+header{
+    position: fixed;left: 0;top: 0;
+    z-index: 9999;
+    width:100%; height: 80px;
+    box-shadow: 0 2px 5px rgba(80,80,80,.5);
+}
+.center{
+    margin: 0 auto;
+    width: 1440px; height: 80px;  
+}
+.back{
+    z-index: 9990;
+    margin: 0 auto;
+    width:100%; height: 80px;
+    content: "";
+    top:0;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    opacity: 20%;
+}
+header>div.center>*{float: left;}
+header>div.center>dl{float: right;}
+header>div>h1{margin: 24px 0 0 0;}/* margin-top 강사님이라 차이있음(21px) */
+/* 네비게이터 */
+header>div.center>nav{
+    margin-left: 83px;
+    padding-top: 31px;
+}
+header>div>nav>ul{
+    height: 52px;
+}
+header>div>nav>ul>li{
+    position: relative;
+    float: left;
+    margin: 0 37px;
+    height: 52px;
+}
+header>div>nav>ul>li>a{
+    display: block;
+    padding-bottom: 12px;
+    font-size: 16px;
+    color: #fff;
+}
+header>div>nav>ul>li>ul{
+    display: none;
+    position: absolute;
+    left: -25px; top: 52px;
+    width: 185px;
+    background: #07399c;
+}
+header>div>nav>ul>li>ul>li{
+    position: relative;
+    margin: 0 1px;
+    height: 43px;
+    border-bottom: 1px solid #03205f;
+}
+header>div>nav>ul>li>ul>li:last-child{
+    border-bottom-color:#07399c;
+}
+header>div>nav>ul>li>ul>li>a{
+    display: block;
+    padding-left: 21px;
+    height: 43px;
+    color: #fff;
+    font-size: 14px; line-height: 43px;
+}
+header>div>nav>ul>li>ul>li.child{
+    background: url(../../imgs/bu_2depth_on.png) no-repeat 165px 50%;
+}
+header>div>nav>ul>li>ul>li>ul{
+    display: none;
+    position: absolute;left: 183px; top: -1px;
+    border: 1px solid #07399c;
+    width: 188px;
+    background: #fff;
+}
+header>div>nav>ul>li>ul>li>ul>li{
+    height: 34px;
+}
+header>div>nav>ul>li>ul>li>ul>li>a{
+    position: relative;
+    margin-left: 19px;
+    height: 34px;
+    line-height: 34px;
+}
+header>div>nav>ul>li>ul>li>ul>li>a::after{
+    position: absolute;
+    left: -10px;top: 50%;
+    content: "";
+    width: 4px;height: 0;border-top: 1px solid #2c3d45;
+}
+
+/* 이벤트 */
+header>div>nav>ul>li:hover>ul{
+    display: block;
+}
+header>div>nav>ul>li>ul>li:hover{
+    background: #fff;
+}
+header>div>nav>ul>li>ul>li.child:hover{
+    margin-right: 0;
+    background: #fff url(../../imgs/bu_2depth_on.png)no-repeat 165px 50%;
+}
+header>div>nav>ul>li>ul>li:hover>a{
+    color: #263238;
+}
+header>div>nav>ul>li>ul>li:hover>ul{
+    display: block; z-index: -1;
+}
+
+
+#srchBox{position: relative;}
+#srchBox>button{
+    box-sizing: border-box;
+    border: 0 none;
+    margin-left: 80px; margin-top: 22px;
+    padding: 0;
+    border-radius: 6px;
+    width: 91px; height: 36px;
+    background: #424c51 url(../../imgs/ic_search.png)no-repeat 64px 7px;
+    text-align: left;
+    color: #fff;
+    text-indent: 10px;
+    letter-spacing: -2px; line-height: 36px;
+}
+#srchBox>form{
+    display: none;
+    position: absolute;
+    right: -51px;top: 83px; /* right값은 강사님이랑 차이 있음(-48px) */
+    width: 320px; height: 50px; background: #424c51;
+}
+#srchBox>form>input[type="search"]{
+    float: left; margin: 16px 0 0 20px; border: 0 none; outline: 0 none;
+    width: 220px; height: 17px; background: #424c51; 
+}
+#srchBox>form>input[type="search"]::placeholder{
+    color: #ebebeb;
+}
+#srchBox>form>input[type="image"]{
+    float: left; margin: 13px 0 0 6px; border: 0 none;
+}
+#srchBox>form>p.close{
+    position: relative;
+    float: right;
+    margin: 18px 13px 0 0;
+}
+#srchBox>form>p.close::after{
+    position: absolute; left: -13px; top: -8px;
+    content: "";
+    width: 0; height: 30px; border-left: 1px solid #858f9a;
+}
+header>div.center>div#lang{
+    position: relative;
+    overflow: hidden;
+    float: right;
+    margin-top: 22px;
+    border: 1px solid #a9b0b8;
+    border-radius: 6px;
+    width: 44px; height: 34px;
+    text-align: center;
+    font-size: 11px; line-height: 34px;/* letter-spacing: -1px; */
+    background: url(../../imgs/country_off.png) no-repeat 50% 90%;
+}
+header>div.center>div#lang.on{
+    background: url(../../imgs/country_on.png)no-repeat 50% 90%;
+}
+header>div.center>div#lang>dl{
+    position: absolute;
+    width: 44px; left: -1px; top: -1px;
+    border-radius: 6px 6px 0 0;
+    
+    border-bottom: 0 none;
+}
+header>div.center>div#lang>dl>dd:first-of-type{
+    border-radius: 6px 6px 0 0;
+}
+header>div.center>div#lang>dl>dd{
+    height: 34px;
+    border-bottom: 1px solid #a9b0b8;
+    background: #fff;
+}
+/* border-bottom주지말고, 언어선택창 클릭시 2,3번째 dd는 
+   absolute로 첫번째 dd를 2px정도 덮으며 띄울 수 있게 해야될 듯 */
+header>div.center>div#lang>dl>dd.on{
+    font-weight: bold;
+    background: none;
+}

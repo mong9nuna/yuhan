@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유한킴벌리_리디자인</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/web/header.css">
+    <link rel="stylesheet" href="css/web/main.css">
+    <link rel="stylesheet" href="css/web/footer.css">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <h1>
+                <a href="index.html">
+                    <img src="imgs/h1_logo.png" alt="유한킴벌리 로고" class="w t res siz">
+                    <!-- <img src="imgs/h1_logo_m.png" alt="유한킴벌리 로고" class="t res"> -->
+                </a>
+            </h1>
+            <p class="res t m"><span class="hidden">메뉴 바로가기</span></p>
+            <nav>
+                <h1 class="hidden">메인 네비게이터</h1>
+                <ul>
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul>
+                            <li><a href="#">유한킴벌리 소개</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">사업현황</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">뉴스룸</a>
+                        <ul>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">YK on AIR</a></li>
+                            <li><a href="#">그래픽 뉴스</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">지속가능경영</a>
+                        <ul>
+                            <li><a href="#">우리강산 푸르게 푸르게</a></li>
+                            <li><a href="#">공유가치창출(CSV)</a></li>
+                            <li><a href="#">환경경영</a></li>
+                            <li><a href="#">동반성장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객중심경영</a>
+                        <ul>
+                            <li><a href="#">고객응대절차</a></li>
+                            <li><a href="#">자주묻는질문</a></li>
+                            <li><a href="#">문의접수</a></li>
+                            <li><a href="#">소비자교육</a></li>
+                            <li><a href="#">정보형 컨텐츠</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">브랜드 사이트</a>
+                        <ul>
+                            <li><a href="#">유아아동용품</a></li>
+                            <li><a href="#">여성 가정용품</a></li>
+                            <li><a href="#">시니어용품</a></li>
+                            <li><a href="#">스킨케어</a></li>
+                            <li><a href="#">산업위생용품</a></li>
+                            <li><a href="#">헬스케어</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="srchBox">
+                <button>제품검색</button>
+                <form action="test.jsp">
+                    <input type="search" placeholder="| 제품명을 입력하세요.">
+                    <input type="image" src="imgs/ic_search.png" alt="검색">
+                    <p class="close"><img src="imgs/ic_close_search.png" alt="닫기"></p>
+                </form>
+            </div>
+            <div id="lang">
+                <dl>
+                    <dt class="hidden">언어변경</dt>
+                    <dd class="on"><a href="#">KOR</a></dd>
+                    <dd><a href="#">ENG</a></dd>
+                    <dd><a href="#">中國語</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="back"></div>
+    </header>
+    <main>
+        <h2 class="hidden">본문</h2>
+        <!-- <div class="mainbanner">
+            <h1 class="hidden">메인배너</h1>
+            <h2 class="hidden">메인배너 목록</h2>
+            <ul class="bannerList">
+                <li>
+                    <a href="#">
+                        <img src="imgs/banner1.png" alt="banner1">
+                    </a>
+                    <div class="visual_text">
+                        <h3>숲으로 지구의 지구력을 높입니다</h3>
+                        <p>유한킴벌리는 37년간 5,431만 그루의 나무를 심고 가꾸고 있습니다</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/banner2.jpg" alt="banner2"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/banner3.jpg" alt="banner3"></a>
+                </li>
+            </ul>
+            <h2 class="hidden">메인배너 컨트롤러</h2>
+            <ul class="bannerControl">
+                <li> <img src="https://wah.or.kr:444/assets/img/main/circle_on.png" alt="첫 번째 배너로 이동"> </li>
+                <li> <img src="https://wah.or.kr:444/assets/img/main/circle_off.png" alt="두 번째 배너로 이동"> </li>
+                <li> <img src="https://wah.or.kr:444/assets/img/main/circle_off.png" alt="두 번째 배너로 이동"> </li>
+            </ul>
+            <p class="bannerPlay"><img src="https://wah.or.kr:444/assets/img/main/btn_pause.png" alt="자동 재생 및 일시 멈춤"></p>
+        </div> -->
+        <div class="section">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            <div class="slidewrap">
+                <ul class="slidelist">
+                    <li>
+                        <a href="#">
+                            <label for="slide03" class="left"></label>
+                            <div class="textbox">
+                                <h3>숲으로 지구의 지구력을 높입니다</h3>
+                                <p>유한킴벌리는 37년간 5,431만 그루의 나무를 심고 가꾸고 있습니다</p>
+                            </div>
+                            <img src="imgs/banner1.png" alt="slide01">
+                            <label for="slide02" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <label for="slide01" class="left"></label>
+                            <img src="imgs/banner2.jpg" alt="slide02">
+                            <label for="slide03" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <label for="slide02" class="left"></label>
+                            <img src="imgs/banner3.jpg" alt="slide03">
+                            <label for="slide01" class="right"></label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="event">
+
+        </section>
+        <section class="news">
+            <h1>유한킴벌리 소식</h1>
+
+        </section>
+        <aside class="visionTxt">
+            <div class="textbox">
+                <h3>We Act Life-Health-Planet</h3>
+                <p>우리는 생활-건강-지구환경을 위해 행동합니다</p>
+            </div>
+        </aside>
+        <section class="product">
+            <h1>유한킴벌리 브랜드</h1>
+        </section>
+    </main>
+    <footer>
+        <h2 class="hidden">유한킴벌리 마무리 내용</h2>
+        <div class="footerTop">
+            <div class="innerTop">
+                <h3 class="hidden">유한킴벌리 브랜드 바로가기</h3>
+                <ul>
+                    <li><a href="#"><img src="imgs/brand1.jpg" alt="더블하트로고"></a></li>
+                    <li><a href="#"><img src="imgs/brand2.jpg" alt="뽀삐로고"></a></li>
+                    <li><a href="#"><img src="imgs/brand3.jpg" alt="마이비데로고"></a></li>
+                    <li><a href="#"><img src="imgs/brand4.jpg" alt="스카트로고"></a></li>
+                    <li><a href="#"><img src="imgs/brand5.jpg" alt="tn로고"></a></li>
+                    <li><a href="#"><img src="imgs/brand6.jpg" alt="그린핑거로고"></a></li>
+                    <li><a href="#"><img src="imgs/brand7.jpg" alt="좋은느낌로고"></a></li>
+                    <li><a href="#"><img src="imgs/brand8.jpg" alt="화이트로고"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBtm">
+            <div class="innerBtm">
+                <div class="util_link">
+                    <p><a href="#"><img src="imgs/logo_footer.png" alt="유한킴벌리 로고"></a></p>
+                    <dl class="utilBtm">
+                        <dt class="hidden">하단 유틸메뉴</dt>
+                        <dd class="txt">찾아오시는 길</dd>
+                        <dd class="txt">개인정보처리방침</dd>
+                    </dl>
+                </div>
+                <div class="sns_link">
+                    <a href="#"><img src="imgs/sns_footer.png" alt="페이스북"></a>
+                    <a href="#"><img src="imgs/sns_footer.png" alt="인스타그램"></a>
+                    <a href=""><img src="imgs/sns_footer.png" alt="유튜브"></a>
+                    <a href=""><img src="imgs/sns_footer.png" alt="네이버블로그"></a>
+                </div>
+                <address>
+                    <p>대표자 : 진재승</p>
+                    <p>주소 : 서울시 송파구 올림픽로 300 롯데월드타워 29층 (우)05551</p>
+                    <p>사업자번호 : 120-81-11436</p>
+                    <p><a href="#">회사대표 이메일</a></p>
+                    <p>제품관련 문의 : 080-022-7007</p>
+                    <p>회사관련 문의 : 02-6411-0100</p>
+                    <p>Copyright © Yuhan-Kimberly. All right Reserved.</p>
+                </address>
+            </div><!-- inner end -->
+        </div><!-- footerBtm end -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* 메인 배너 */
+.section{
+    position: relative;
+}
+.section input[id*="slide"]{
+    display: none;
+}
+.section .slidewrap{
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.section .slidelist{
+    white-space: nowrap;
+    font-size: 0;
+}
+.section .slidelist > li{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
+.section .slidelist >li>a{
+    display: block;
+    position: relative;
+}
+.section .slidelist >li>a>img{
+    width: 100%;
+}
+.section .slidelist >label{
+    position: absolute;
+    z-index: 10;
+    top: 500px;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+.section .slidelist .left{
+    width: 256px;
+    height: 256px;
+    left: 30px;
+    background: url(../../imgs/left-arrow.png) center center / 100% no-repeat;
+}
+.section .slidelist .right{
+    width: 256px;
+    height: 256px;
+    right: 30px;
+    background: url(../../imgs/right-arrow.png) center center / 100% no-repeat;
+}
+
+.section .slidelist .textbox h3{
+    font-size:50px; 
+    color:#fff;opacity:0;
+    transform:translateY(30px);
+    transition:all .5s;
+}
+.section .slidelist .textbox p{
+    font-size:24px;
+    color:#fff;opacity:0;
+    transform:translateY(30px);
+    transition:all .5s;
+}
+
+.section[id="slide01"]:checked ~ .slidewrap .slidelist > li {
+    transform: translateX(0%);
+}
+.section[id="slide02"]:checked ~ .slidewrap .slidelist > li {
+    transform: translateX(-100%);
+}
+.section[id="slide03"]:checked ~ .slidewrap .slidelist > li {
+    transform: translateX(-200%);
+}
+
+/* 만들다 만나다 꿈꾸다 */
+
+/* 유한킴벌리 소식 */
+
+/* 서브배너 */
+
+/* 유한킴벌리 브랜드 */
