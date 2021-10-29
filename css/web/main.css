@@ -1,62 +1,85 @@
+main{
+    margin: 0 auto;
+    overflow: hidden;
+}
+.secTitle{
+    text-align: center;
+    font-size: 36px;
+    line-height: 54px;
+    font-family: 'HangeulNuri-Bold', sans-serif;
+}
+.secTitleB{
+    color: #00aae7;
+}
 /* 메인 배너 */
 .section{
+    height: 1080px;
+    margin: 0 auto;
     position: relative;
 }
 .section input[id*="slide"]{
     display: none;
 }
 .section .slidewrap{
-    max-width: 1920px;
-    margin: 0 auto;
-    overflow: hidden;
+    
 }
 .section .slidelist{
+    position:relative;
     white-space: nowrap;
     font-size: 0;
 }
-.section .slidelist > li{
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    transition: all .5s;
+.slidelist .slick-prev{
+    position:absolute;
 }
-.section .slidelist >li>a{
-    display: block;
-    position: relative;
+.slidelist .slick-next{
+    position:absolute;
 }
-.section .slidelist >li>a>img{
-    width: 100%;
+.slick-dots{
+    position:absolute; bottom:0; z-index:9999; 
+    width:600px; height:50px; 
+    border:1px solid red; 
 }
-.section .slidelist >label{
-    position: absolute;
-    z-index: 10;
-    top: 500px;
-    transform: translateY(-50%);
-    padding: 50px;
-    cursor: pointer;
+.slick-dots>li{
+    
 }
-.section .slidelist .left{
-    width: 256px;
-    height: 256px;
-    left: 30px;
-    background: url(../../imgs/left-arrow.png) center center / 100% no-repeat;
-}
-.section .slidelist .right{
-    width: 256px;
-    height: 256px;
-    right: 30px;
-    background: url(../../imgs/right-arrow.png) center center / 100% no-repeat;
+.slick-dots>li.slick-active{
+
 }
 
-.section .slidelist .textbox h3{
-    font-size:50px; 
+.section .slidelist  li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.section .slidelist li a{
+    display: block;
+    display: inline-block;
+    position: relative;
+}
+.section .slidelist li a img{
+    width: 100%;
+}
+.section .slidelist li>a>div.textbox{
+    position:absolute;
+    width: 1020px;
+    height: 144px;
+    top: 50%;
+    left: 50%;
+}
+.section .slidelist li>a .textbox>h3{
+    position:absolute;
+    font-size:60px; 
+    line-height: 90px;
+    vertical-align: middle;
     color:#fff;opacity:0;
     transform:translateY(30px);
     transition:all .5s;
 }
-.section .slidelist .textbox p{
-    font-size:24px;
+.section .slidelist li>a .textbox>p{
+    position:absolute;
+    font-size:36px;
+    line-height: 54px;
     color:#fff;opacity:0;
+    vertical-align: middle;
     transform:translateY(30px);
     transition:all .5s;
 }
@@ -72,9 +95,106 @@
 }
 
 /* 만들다 만나다 꿈꾸다 */
-
+.event{
+    height: 584px;
+    margin: 0 auto;
+    margin-top: 180px;
+}
+.event .inner{
+    width: 1440px;
+    height: 584px;
+    margin: 0 auto;
+}
+.event .inner .contents{
+    width: 1440px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: purple;
+}
 /* 유한킴벌리 소식 */
-
+.news{
+    height: 414px;
+    margin: 0 auto;
+    margin-top: 180px;
+}
+.news .inner{
+    width: 1440px;
+    height: 414px;
+    margin: 0 auto;
+}
+.news .inner .contents{
+    width: 1440px;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: purple;
+}
 /* 서브배너 */
+.visionTxt{
+    margin: 190px auto;
+    height: 500px;
+    background: url(../../imgs/sub_banner1.png) no-repeat;
+    box-sizing: border-box;
+}
+.visionTxt .viInner{
+    margin: 0 auto;
+    height: 500px;
+}
+.visionTxt .viInner .textbox2{
+    padding: 178px 0;
+    color: white;
+    text-align: center;
+}
+.visionTxt .viInner .textbox2>h3{
+    font-family: 'HangeulNuri-Bold', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 90px;
+}
+.visionTxt .viInner .textbox2>p{
+    font-family: 'HangeulNuri-Bold', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 54px;
+}
 
 /* 유한킴벌리 브랜드 */
+.product{
+    margin: 0 auto;
+}
+.product .inner{
+    margin: 0 auto;
+    width: 1440px;
+}
+.product .productBox{
+    margin-top: 80px;
+    width: 1440px;
+    height: 960px;
+    display: flex;
+    flex-flow:row wrap;
+    flex: 0 0 33.3%;
+}
+.product .productBox>li{
+    width: 480px;
+    height: 480px;   
+}
+.product .productBox>li>a{
+    overflow:hidden;
+    position: relative;
+    display:block;
+    height: 480px;
+}
+.product .productBox>li>a>div[class^= "box"]{
+    width:100%;
+}
+.product .productBox>li>a>div[class^= "box"]>img{
+    width:100%;
+}
+
+.product .productBox>li>a>div[class^="caption"]{
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    background: rgba(15, 15, 15, 0.6);
+}    

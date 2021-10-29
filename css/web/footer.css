@@ -1,16 +1,43 @@
 footer{
     width: 100%;
     height: 340px;
-    position: relative;
-    z-index: 10; 
+    margin-top: 180px;
 }
-footer .footerTop{}
-footer .footerTop .innerTop{}
-footer .footerTop .innerTop>ul{}
-footer .footerTop .innerTop>ul>li{}
+footer .footerTop{
+    width: 100%;
+    height: 140px;
+    box-sizing: border-box;
+    border-top: rgba(15, 15, 15, 0.2) solid 2px;
+    background-color: white;
+}
+footer .footerTop .innerTop{
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+footer .footerTop .innerTop>ul{
+    width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;  
+}
+footer .footerTop .innerTop>ul>li{
+    width: 100px;
+    height: 100px;  
+}
 footer .footerTop .innerTop>ul>li>a{}
 footer .footerTop .innerTop>ul>li>a>img{}
 /* footer::after{
+    
+} */
+footer .footerBtm{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+footer .footerBtm::after{
     width: 100%;
     height: 200px;
     content: "";
@@ -20,26 +47,95 @@ footer .footerTop .innerTop>ul>li>a>img{}
     background: #0f0f0f;
     opacity: 60%;
     z-index: 9;
-} */
-footer .footerBtm{}
+}
 footer .footerBtm .innerBtm{
     width: 1440px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 40px 0;
 }
-footer .footerBtm .innerBtm .util_link{}
-footer .footerBtm .innerBtm .util_link>p{
+footer .footerBtm .innerBtm .util_link{
+    position: relative;
+}
+footer .footerBtm .innerBtm .util_link>h3{
     /*logo*/
+    position: absolute;
+    top: 0;
+    left: 30px;
+    color: white; z-index: 10;
 }
 footer .footerBtm .innerBtm .util_link .utilBtm{
     /*하단유틸메뉴*/
+    position: absolute;
+    top: 13px;
+    left: 150px;
+    z-index: 10;
 }
-footer .footerBtm .innerBtm .util_link .utilBtm .txt{
-    /*찾아오시는길 개인정보*/
+footer .footerBtm .innerBtm .util_link .utilBtm .txt:first-of-type{
+    /*찾아오시는길 개인정보 처리방침*/
+    float: left;
+    padding-left: 60px;
+}
+footer .footerBtm .innerBtm .util_link .utilBtm .txt:last-of-type{
+    float: left;
+    padding-left: 30px;
+}
+footer .footerBtm .innerBtm .util_link .utilBtm .txt>a{
+    color: white;
+}
+footer .footerBtm .innerBtm .sns_link{
+    position: relative;
+    float: right;
+    z-index: 11;
+}
+footer.footerBtm.innerBtm.sns_link>a img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
 }
 
-footer .footerBtm .innerBtm .sns_link{}
-footer .footerBtm .innerBtm .sns_link>a{}
-footer .footerBtm .innerBtm .sns_link>a>img{}
-
-footer .footerBtm .innerBtm>address{}
-footer .footerBtm .innerBtm>address>p{}
-footer .footerBtm .innerBtm>address>p>a{}
+footer .footerBtm .innerBtm>address{
+    position: relative;
+    font-size: 12px;
+    list-style: 20px;
+    margin-top: 60px;
+}
+footer .footerBtm .innerBtm>address>p{
+    position: absolute;
+    z-index: 20;
+    color: white;
+}
+footer .footerBtm .innerBtm>address>p>a{
+    z-index: 20;
+    color: white;
+}
+footer .footerBtm .innerBtm>address>p:nth-of-type(1){
+    top: 0;
+    left: 30px;
+}
+footer .footerBtm .innerBtm>address>p:nth-of-type(2){
+    top: 0;
+    left: 130px;
+}
+footer .footerBtm .innerBtm>address>p:nth-of-type(3){
+    top: 20px;
+    left: 30px;
+}
+footer .footerBtm .innerBtm>address>p:nth-of-type(4){
+    top: 20px;
+    left: 190px;
+}
+footer .footerBtm .innerBtm>address>p:nth-of-type(5){
+    top: 40px;
+    left: 30px;
+}
+footer .footerBtm .innerBtm>address>p:nth-of-type(6){
+    top: 40px;
+    left: 210px;
+}
+footer .footerBtm .innerBtm>address>p:last-of-type{
+    right: 0;
+    top: 40px;
+}
