@@ -6,190 +6,359 @@ body>div{
 }
 header{
     position: fixed;left: 0;top: 0;
-    z-index: 9999;
+    z-index: 990;
     width:100%; height: 80px;
+    background-color:rgba(0,0,0,.1);
     box-shadow: 0 2px 5px rgba(80,80,80,.5);
 }
 .center{
-    margin: 0 auto;
-    width: 1440px; height: 80px;  
+    position: relative;
+    min-width: 1440px;
+    margin: 0 auto; 
+    height: 80px;
+    overflow: hidden;  
 }
-.back{
-    z-index: 9990;
-    margin: 0 auto;
-    width:100%; height: 80px;
-    content: "";
-    top:0;
-    left: 0;
-    position: absolute;
-    background-color: white;
-    opacity: 20%;
+
+/* margin-top 강사님이라 차이있음(21px) */
+
+/* 네비게이터 투명*/
+header>div.center>h1{
+    
 }
-header>div.center>*{float: left;}
-header>div.center>dl{float: right;}
-header>div>h1{margin: 24px 0 0 0;}/* margin-top 강사님이라 차이있음(21px) */
-/* 네비게이터 */
+header>div.center>a{
+    z-index: 999;
+    display: inline-block;
+    margin: 24px 0 0 30px;
+    width: 150px;
+    height: 32px;
+    background: url(../../imgs/h1_logo.png) no-repeat;
+
+}   
 header>div.center>nav{
-    margin-left: 83px;
-    padding-top: 31px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
 }
-header>div>nav>ul{
-    height: 52px;
+header>div.center>nav>ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
-header>div>nav>ul>li{
-    position: relative;
-    float: left;
-    margin: 0 37px;
-    height: 52px;
+header>div.center>nav>ul>li{
+    width: 200px;
+    height: 80px;
 }
-header>div>nav>ul>li>a{
-    display: block;
-    padding-bottom: 12px;
-    font-size: 18px;
+header>div.center>nav>ul>li>a{
     font-family: 'HangeulNuri-Bold', sans-serif;
-    color: #fff;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-header>div>nav>ul>li>ul{
+header>div.center>nav>ul>li>ul{
     display: none;
-    position: absolute;
-    left: -25px; top: 52px;
-    width: 185px;
-    background: #07399c;
 }
-header>div>nav>ul>li>ul>li{
+header>div.center>div.head_util{
+    float: right;
+    right: 0;
+    width:350px;
+    height: 80px;
+}
+
+header>div.center>div.head_util{
     position: relative;
-    margin: 0 1px;
-    height: 43px;
-    border-bottom: 1px solid #03205f;
 }
-header>div>nav>ul>li>ul>li:last-child{
-    border-bottom-color:#07399c;
+header>div.center>div.head_util>div#srchBox{
+    
 }
-header>div>nav>ul>li>ul>li>a{
-    display: block;
-    padding-left: 21px;
-    height: 43px;
-    color: #fff;
-    font-size: 14px; line-height: 43px;
-}
-header>div>nav>ul>li>ul>li.child{
-    background: url(../../imgs/bu_2depth_on.png) no-repeat 165px 50%;
-}
-header>div>nav>ul>li>ul>li>ul{
-    display: none;
-    position: absolute;left: 183px; top: -1px;
-    border: 1px solid #07399c;
-    width: 188px;
-    background: #fff;
-}
-header>div>nav>ul>li>ul>li>ul>li{
-    height: 34px;
-}
-header>div>nav>ul>li>ul>li>ul>li>a{
-    position: relative;
-    margin-left: 19px;
-    height: 34px;
-    line-height: 34px;
-}
-header>div>nav>ul>li>ul>li>ul>li>a::after{
+header>div.center>div.head_util>div#srchBox>button{
     position: absolute;
-    left: -10px;top: 50%;
-    content: "";
-    width: 4px;height: 0;border-top: 1px solid #2c3d45;
-}
-
-/* 이벤트 */
-header>div>nav>ul>li:hover>ul{
-    display: block;
-}
-header>div>nav>ul>li>ul>li:hover{
-    background: #fff;
-}
-header>div>nav>ul>li>ul>li.child:hover{
-    margin-right: 0;
-    background: #fff url(../../imgs/bu_2depth_on.png)no-repeat 165px 50%;
-}
-header>div>nav>ul>li>ul>li:hover>a{
-    color: #263238;
-}
-header>div>nav>ul>li>ul>li:hover>ul{
-    display: block; z-index: -1;
-}
-
-
-#srchBox{position: relative;}
-#srchBox>button{
+    top: 0; right:100px;
     box-sizing: border-box;
     border: 0 none;
-    margin-left: 80px; margin-top: 22px;
+    margin-left: 70px;
+    margin-top: 22px;
     padding: 0;
     border-radius: 6px;
-    width: 91px; height: 36px;
-    background: #424c51 url(../../imgs/ic_search.png)no-repeat 64px 7px;
+    width: 91px;
+    height: 36px;
+    background: url(../../imgs/ic_search.png)no-repeat 64px 7px;
     text-align: left;
     color: #fff;
     text-indent: 10px;
-    letter-spacing: -2px; line-height: 36px;
+    letter-spacing: -1px;
+    line-height: 36px;
+    cursor: pointer;
 }
-#srchBox>form{
+header>div.center>div.head_util>div#srchBox>form{
     display: none;
+}
+header>div.center>div.head_util>div#srchBox{
+    position: relative;
+}
+header>div.center>div.head_util>div#lang{
     position: absolute;
-    right: -51px;top: 83px; /* right값은 강사님이랑 차이 있음(-48px) */
-    width: 320px; height: 50px; background: #424c51;
-}
-#srchBox>form>input[type="search"]{
-    float: left; margin: 16px 0 0 20px; border: 0 none; outline: 0 none;
-    width: 220px; height: 17px; background: #424c51; 
-}
-#srchBox>form>input[type="search"]::placeholder{
-    color: #ebebeb;
-}
-#srchBox>form>input[type="image"]{
-    float: left; margin: 13px 0 0 6px; border: 0 none;
-}
-#srchBox>form>p.close{
-    position: relative;
-    float: right;
-    margin: 18px 13px 0 0;
-}
-#srchBox>form>p.close::after{
-    position: absolute; left: -13px; top: -8px;
-    content: "";
-    width: 0; height: 30px; border-left: 1px solid #858f9a;
-}
-header>div.center>div#lang{
-    position: relative;
+    top: 0; right: 30px;
     overflow: hidden;
     float: right;
     margin-top: 22px;
-    border: 1px solid #a9b0b8;
+    border: 1px solid white;
     border-radius: 6px;
-    width: 44px; height: 34px;
-    text-align: center;
-    font-size: 11px; line-height: 34px;/* letter-spacing: -1px; */
-    background: url(../../imgs/country_off.png) no-repeat 50% 90%;
-}
-header>div.center>div#lang.on{
-    background: url(../../imgs/country_on.png)no-repeat 50% 90%;
-}
-header>div.center>div#lang>dl{
-    position: absolute;
-    width: 44px; left: -1px; top: -1px;
-    border-radius: 6px 6px 0 0;
-    
-    border-bottom: 0 none;
-}
-header>div.center>div#lang>dl>dd:first-of-type{
-    border-radius: 6px 6px 0 0;
-}
-header>div.center>div#lang>dl>dd{
+    width: 44px;
     height: 34px;
-    border-bottom: 1px solid #a9b0b8;
-    background: #fff;
+    text-align: center;
+    font-size: 11px;
+    line-height: 34px;
+    /* letter-spacing: -1px; */
+    background: rgba(80,80,80,.1) url(../../imgs/country_off.png) no-repeat 50% 90%;
 }
-/* border-bottom주지말고, 언어선택창 클릭시 2,3번째 dd는 
-   absolute로 첫번째 dd를 2px정도 덮으며 띄울 수 있게 해야될 듯 */
-header>div.center>div#lang>dl>dd.on{
-    font-weight: bold;
-    background: none;
+header>div.center>div.head_util>div#lang>dl>dd.on>a{
+    font-size: 11px;
+    color: white;
+}
+
+/* 스크롤 하면 생기는 헤더 */
+header.roll{
+    position: fixed;left: 0;top: 0;
+    z-index: 990;
+    width:100%; height: 80px;
+    background-color:white;
+    box-shadow: 0 2px 5px rgba(80,80,80,.5);
+}
+header.roll>div.center>a{
+    position: absolute;
+    top: 0;
+    margin: 24px 0 0 30px;
+    width: 150px;
+    height: 32px;
+    background: url(../../imgs/logo_scroll.png) no-repeat;
+    
+}
+header.roll>div.center>nav>ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(80,80,80,.5);
+}
+header.roll>div.center>nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 320px;
+}
+header.roll>div.center>nav>ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(80,80,80,.5);
+}
+header.roll>div.center>nav>ul>li{
+    width:200px;
+    height: 100%;
+    background-color: white;
+    
+}
+header.roll>div.center>nav>ul>li>a{
+    font-family: 'HangeulNuri-Bold', sans-serif;
+    color: #666666;
+    font-size: 18px;
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header.roll>div.center>div.head_util>div#srchBox>button{
+    position: absolute;
+    top: 0; right:100px;
+    box-sizing: border-box;
+    border: 0 none;
+    margin-left: 70px;
+    margin-top: 22px;
+    padding: 0;
+    border-radius: 6px;
+    width: 91px;
+    height: 36px;
+    background: url(../../imgs/ic_search_b.png)no-repeat 64px 7px;
+    opacity: 50%;
+    text-align: left;
+    color: #fff;
+    text-indent: 10px;
+    letter-spacing: -1px;
+    line-height: 36px;
+    cursor: pointer;
+}
+header.roll>div.center>div.head_util>div#srchBox>form{
+    display: none;
+}
+header.roll>div.center>div.head_util>div#srchBox{
+    position: relative;
+}
+header.roll>div.center>div.head_util>div#lang{
+    position: absolute;
+    top: 0; right: 30px;
+    overflow: hidden;
+    float: right;
+    margin-top: 22px;
+    border: 1px solid #0f0f0f;
+    border-radius: 6px;
+    width: 44px;
+    height: 34px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 34px;
+    /* letter-spacing: -1px; */
+    background:  url(../../imgs/country_off.png) no-repeat 50% 90%;
+}
+header.roll>div.center>div.head_util>div#lang.on{
+    display: block;
+    overflow: visible;
+}
+header.roll>div.center>div.head_util>div#lang>dl>dd>a{
+    font-size: 11px;
+    color: #0f0f0f;
+}
+
+/*box-shadow: 0 2px 5px rgba(80,80,80,.5);*/
+
+/* 호버할때 생기는 헤더 */
+header:hover{}
+header>div.center:hover{
+    position: relative;
+    min-width: 1440px;
+    margin: 0 auto; 
+    height: 320px;
+    overflow: hidden; 
+    transition: all .7s ease-out;
+}
+header>div.center:hover>a{
+    position: absolute;
+    top: 0;
+    margin: 24px 0 0 30px;
+    width: 150px;
+    height: 32px;
+    background: url(../../imgs/logo_scroll.png) no-repeat;
+    
+} 
+header>div.center:hover>nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 320px;
+}
+header>div.center:hover>nav>ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(80,80,80,.5);
+}
+header>div.center:hover>nav>ul>li{
+    width:200px;
+    height: 100%;
+    background-color: white;
+    
+}
+header>div.center:hover>nav>ul>li>a{
+    font-family: 'HangeulNuri-Bold', sans-serif;
+    color: #666666;
+    font-size: 16px;
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header>div.center:hover>nav>ul>li>a:hover{
+    color: #666666;
+    font-size: 18px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: #00aae7 solid 4px;
+    transition: all .1s ease-out;
+}
+header>div.center:hover>nav>ul>li>ul{
+    display: block;
+    background-color: white;  
+}
+header>div.center:hover>nav>ul>li>ul>li>a{
+    color: #0f0f0f;
+    font-size:14px;
+    line-height: 40px;
+}
+header>div.center:hover>div.head_util{
+    float: right;
+    right: 0;
+    width:350px;
+    height: 80px;
+}
+
+header>div.center:hover>div.head_util{
+    position: relative;
+}
+header>div.center:hover>div.head_util>div#srchBox{
+    
+}
+header>div.center:hover>div.head_util>div#srchBox>button{
+    position: absolute;
+    top: 0; right:100px;
+    box-sizing: border-box;
+    border: 0 none;
+    margin-left: 70px;
+    margin-top: 22px;
+    padding: 0;
+    border-radius: 6px;
+    width: 91px;
+    height: 36px;
+    background: url(../../imgs/ic_search_b.png)no-repeat 64px 7px;
+    opacity: 50%;
+    text-align: left;
+    color: #fff;
+    text-indent: 10px;
+    letter-spacing: -1px;
+    line-height: 36px;
+    cursor: pointer;
+}
+header>div.center:hover>div.head_util>div#srchBox>form{
+    display: none;
+}
+header>div.center:hover>div.head_util>div#srchBox{
+    position: relative;
+}
+header>div.center:hover>div.head_util>div#lang{
+    position: absolute;
+    top: 0; right: 30px;
+    overflow: hidden;
+    float: right;
+    margin-top: 22px;
+    border: 1px solid #0f0f0f;
+    border-radius: 6px;
+    width: 44px;
+    height: 34px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 34px;
+    /* letter-spacing: -1px; */
+    background:  url(../../imgs/country_off.png) no-repeat 50% 90%;
+}
+header>div.center:hover>div.head_util>div#lang.on{
+    display: block;
+    overflow: visible;
+}
+header>div.center:hover>div.head_util>div#lang>dl>dd>a{
+    font-size: 11px;
+    color: #0f0f0f;
 }

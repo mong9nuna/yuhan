@@ -22,35 +22,23 @@
     <link rel="stylesheet" href="css/web/header.css">
     <link rel="stylesheet" href="css/web/main.css">
     <link rel="stylesheet" href="css/web/footer.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>	
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(function(){
-
-            $('.slidelist').slick({
-                autoplay:true,
-                arrows:true,
-                dots:true,
-
-            });
-        });
-        
-    </script>
+    <link rel="icon" href="imgs/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/web/script.js"></script>
 </head>
 <body>
     <div class="centerAll">
         <header>
             <div class="center">
-                <h1>
-                    <a href="index.html">
-                        <img src="imgs/h1_logo.png" alt="유한킴벌리 로고" class="w t res siz">
-                        <!-- <img src="imgs/h1_logo_m.png" alt="유한킴벌리 로고" class="t res"> -->
-                    </a>
-                </h1>
+                <a href="index.html">
+                    <h1 class="hidden">유한킴벌리</h1>
+                    <!-- <img src="imgs/h1_logo.png" alt="유한킴벌리 로고" class="w t res siz"> -->
+                    <!-- <img src="imgs/h1_logo_m.png" alt="유한킴벌리 로고" class="t res"> -->
+                </a>
                 <p class="res t m"><span class="hidden">메뉴 바로가기</span></p>
                 <nav>
                     <h1 class="hidden">메인 네비게이터</h1>
@@ -105,65 +93,95 @@
                         </li>
                     </ul>
                 </nav>
-                <div id="srchBox">
-                    <button>제품검색</button>
-                    <form action="test.jsp">
-                        <input type="search" placeholder="| 제품명을 입력하세요.">
-                        <input type="image" src="imgs/ic_search.png" alt="검색">
-                        <p class="close"><img src="imgs/ic_close_search.png" alt="닫기"></p>
-                    </form>
+                <div class="head_util">
+                    <div id="srchBox">
+                        <button class="hidden">제품검색</button>
+                        <form action="test.jsp">
+                            <input type="search" placeholder="| 제품명을 입력하세요.">
+                            <input type="image" src="imgs/ic_search.png" alt="검색">
+                            <p class="close"><img src="imgs/ic_close_search.png" alt="닫기"></p>
+                        </form>
+                    </div>
+                    <div id="lang" class="on">
+                        <dl>
+                            <dt class="hidden">언어변경</dt>
+                            <dd class="on"><a href="#">KOR</a></dd>
+                            <dd><a href="#">ENG</a></dd>
+                            <dd><a href="#">中國語</a></dd>
+                        </dl>
+                    </div>
                 </div>
-                <div id="lang">
-                    <dl>
-                        <dt class="hidden">언어변경</dt>
-                        <dd class="on"><a href="#">KOR</a></dd>
-                        <dd><a href="#">ENG</a></dd>
-                        <dd><a href="#">中國語</a></dd>
-                    </dl>
-                </div>
-            </div>
+            </div><!-- center end -->
             <div class="back"></div>
         </header>
         <main>
             <h2 class="hidden">본문</h2>
-            <div class="section">
-                <input type="radio" name="slide" id="slide01" checked>
-                <input type="radio" name="slide" id="slide02">
-                <input type="radio" name="slide" id="slide03">
-                <div class="slidewrap">
-                    <ul class="slidelist">
-                        <li>
+            <div class="section page-wrapper">
+                <div class="slidewrap post-slider">
+                    <div class="slidelist post-wrapper">
+                        <div class="post">
                             <a href="#">
-                                <div class="textbox1">
-                                    <h3>숲으로 지구의 지구력을 높입니다</h3>
-                                    <p>유한킴벌리는 37년간 5,431만 그루의 나무를 심고 가꾸고 있습니다</p>
-                                </div>
-                                <img src="imgs/banner1.png" alt="slide01">
+                                <img src="imgs/banner1.jpg" alt="slide01">
                             </a>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="post">
                             <a href="#">
                                 <img src="imgs/banner2.jpg" alt="slide02">
                             </a>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="post">
                             <a href="#">
                                 <img src="imgs/banner3.jpg" alt="slide03">
                             </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                        </div>
+                    </div>
+                </div><!-- slidewrap post-slider end -->
+            </div><!-- section page-wrapper end -->
             <section class="event">
                 <div class="inner">
                     <h1 class="secTitle">우리 생활에 가까운 숲을 <span class="secTitleB">만들다</span></h1>
-                    <div class="contents"></div>
+                    <div class="contents">
+                        <div class="page1">
+                            <div class="rec"></div>
+                            <div class="img"></div>
+                            <div class="control"></div>
+                        </div>
+                        <div class="page2">
+                            <div class="rec"></div>
+                            <div class="img"></div>
+                            <div class="control"></div>
+                        </div>
+                        <div class="page3">
+                            <div class="rec"></div>
+                            <div class="img"></div>
+                            <div class="control"></div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="news">
-                <div class="inner">
-                    <h1 class="secTitle"><span class="secTitleB">유한킴벌리</span> 소식</h1>
-                    <div class="contents"></div>
+                <h1 class="secTitle"><span class="secTitleB">유한킴벌리</span> 소식</h1>
+                <div class="inner"> 
+                    <div class="news1">
+                        <h2><a href="#">“‘좋은느낌 힘내라 딸들아’ 캠페인”</a></h2>
+                        <p>10월 20일 ‘초경의 날’을 맞이하여, 유한킴벌리 좋은느낌이 여성의 평등하고 보편적인 월경권 보장을 응원하고 지지하는 브랜드의 마음을 담아 발달장애 여성 생리대 사용 교육 지원사업을 본격화해 나갈 계획이라고 밝혔다.</p>
+                        <time datetime="2021-10-20">2021-10-20 데일리 경제</time>
+                    </div>
+                    <div class="news2">
+                        <h2><a href="#">유한킴벌리, ‘기후위기 솔루션, <br>숲의 역할’ 담은 캠페인 광고 런칭</a></h2>
+                        <p>캠페인에서 제시된 숲의 주요한 역할은 크게 탄소 흡수, 열섬 현상 완화, 홍수 방지, 생명다양성 지속 등 4가지로, 지구에 변화가 생길 때 숲이 유기적으로 작동하고 있음을 실감할 수 있도록 숲의 역할들을 탄소흡수 모드 ON, 쿨링 시스템 가동, 홍수 방지 시스템 가동, 멸종 방지 모드 ON 등 익숙한 일상 용어로 표현됐다.</p>
+                        <time datetime="2021-10-20">2021-10-20 데일리 경제</time>
+                    </div>
+                    <div class="news3">
+                        <h2><a href="#">유한킴벌리,<br> ‘포용과 다양성위원회’ 출범</a></h2>
+                        <p>10월 20일 ‘초경의 날’을 맞이하여, 유한킴벌리 좋은느낌이 여성의 평등하고 보편적인 월경권 보장을 응원하고 지지하는 브랜드의 마음을 담아 발달장애 여성 생리대 사용 교육 지원사업을 본격화해 나갈 계획이라고 밝혔다.</p>
+                        <time datetime="2021-10-20">2021-10-20 데일리 경제</time>
+                    </div>
+                    <div class="news4">
+                        <h2><a href="#">유한킴벌리 몽골 사막화방지 활동,<br>유엔사막화방지협약 사무총장상 수상 </a></h2>
+                        <p>유한킴벌리가 몽골에서 지속해온 사막화방지 활동 사례가 국내외 기업, 단체를 대상으로 진행된 ‘사막화방지 우수 동영상’ 공모전에서 유엔사막화방지협약(UNCCD) 사무총장상을 수상했다. 해당 공모는 사막화방지 노력을 치하하고, 시민들의 관심을 환기하기 위해 시행됐으며, 수상사례는 창원 이니셔티브 출범 10주년 행사를 통해 공유됐다.</p>
+                        <time datetime="2021-10-20">2021-10-20 데일리 경제</time>
+                    </div>
                 </div>
             </section>
             <aside class="visionTxt">
@@ -195,7 +213,7 @@
                                     <img src="imgs/product2.jpg" alt="product2">
                                 </div>
                                 <div class="caption">
-                                    <p class="opTitle">스킨케어 보러가기</p>
+                                    <p class="opTitle">물티슈 보러가기</p>
                                     <p class="iconPlus">+</p>
                                 </div>
                             </a>
@@ -206,7 +224,7 @@
                                     <img src="imgs/product3.jpg" alt="product3">
                                 </div>
                                 <div class="caption">
-                                    <p class="opTitle">스킨케어 보러가기</p>
+                                    <p class="opTitle">아기용품 보러가기</p>
                                     <p class="iconPlus">+</p>
                                 </div>
                             </a>
@@ -217,7 +235,7 @@
                                     <img src="imgs/product4.jpg" alt="product4">
                                 </div>
                                 <div class="caption">
-                                    <p class="opTitle">스킨케어 보러가기</p>
+                                    <p class="opTitle">손소독제 보러가기</p>
                                     <p class="iconPlus">+</p>
                                 </div>
                             </a>
@@ -228,7 +246,7 @@
                                     <img src="imgs/product5.jpg" alt="product5">
                                 </div>
                                 <div class="caption">
-                                    <p class="opTitle">스킨케어 보러가기</p>
+                                    <p class="opTitle">물티슈 보러가기</p>
                                     <p class="iconPlus">+</p>
                                 </div>
                             </a>

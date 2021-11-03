@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ddd</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100vh;
+        }
+
+        .swiper-container.swiper-container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .swiper-slide { text-align: center; font-size: 18px; background: #fff;
+            display: -webkit-box; display:
+        -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center;
+        -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center;
+        -webkit-align-items: center; align-items: center; 
+        }
+        
+        .swiper-container-vertical>.swiper-pagination-bullets{ top: unset !important; bottom: 10px; left: 0;
+        width: 100%; }
+        .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{ display : inline-block
+        !important; margin: 6px 2px !important; }
+    </style>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- swiper슬라이더 메인컨테이너 -->
+    <div class="swiper-container">
+        <!-- 보여지는 영역 -->
+        <div class="swiper-wrapper">
+            <!-- <div class="swiper-slide">내용</div> 를 추가하면된다 -->
+            <div class="swiper-slide">
+                <img src="imgs/banner1.jpg" alt="ss">
+            </div>
+            <div class="swiper-slide">
+                <div><img src="imgs/banner2.jpg" alt="dds"></div>
+                <div></div>
+            </div>
+            <div class="swiper-slide">
+                <div><img src="imgs/banner3.jpg" alt="d"></div>
+            </div>
+        </div> <!-- 페이징 버튼 처리 상황에 따라 추가 삭제가능-->
+        <div class="swiper-pagination"></div> <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</body>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal', slidesPerView: 3, //페이지와 페이지 사이의 간격
+    spaceBetween: 30,
+    debugger: true,
+    mousewheel: true,
+    loop: true,
+    centeredSlides: true,
+    effect: 'fade',
+    autoplay: { //시간 1000 이 1초
+    delay: 2500,
+    disableOnInteraction: false,
+    }, //페이징
+    pagination: { //페이지 기능
+    el:
+    '.swiper-pagination', //클릭 가능여부
+    clickable: true, }, //방향표
+    navigation: { //다음페이지 설정
+    nextEl: '.swiper-button-next',
+    //이전페이지 설정
+    prevEl: '.swiper-button-prev', }, });
+
+
+</script>
+</html>
