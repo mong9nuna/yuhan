@@ -412,7 +412,9 @@ main {
     height: 480px;
 }
 
-.product .productBox>li:hover>a::after {}
+.product .productBox>li:hover>a::after {
+    
+}
 
 .product .productBox>li:hover>a>div[class^="box"] {
     width: 480px;
