@@ -48,11 +48,11 @@ $(function(){
         $('.eventInner').slick('slickPause');
         $('.btnpause').addClass("on");
         $('.btnplay').addClass("on");
-        $('.btnplay').click(function(){
-            $('.eventInner').slick('slickPlay');
-            $('.btnplay').removeClass("on");
-            $('.btnpause').removeClass("on");
-        });
+    });
+    $('.btnplay').click(function(){
+        $('.eventInner').slick('slickPlay');
+        $('.btnplay').removeClass("on");
+        $('.btnpause').removeClass("on");
     });
 
 
