@@ -88,7 +88,7 @@ header>div.center>div.head_util>div#srchBox>button{
     height: 36px;
     background: url(../../imgs/ic_search.png)no-repeat 64px 7px;
     text-align: left;
-    color: #fff;
+    color: white;
     text-indent: 10px;
     letter-spacing: -1px;
     line-height: 36px;
@@ -126,8 +126,6 @@ header.roll{
     position: fixed;left: 0;top: 0;
     z-index: 990;
     width:100%; height: 80px;
-    background-color:white;
-    box-shadow: 0 2px 5px rgba(80,80,80,.5);
 }
 header.roll>div.center>a{
     position: absolute;
@@ -137,14 +135,6 @@ header.roll>div.center>a{
     height: 32px;
     background: url(../../imgs/logo_scroll.png) no-repeat;
     
-}
-header.roll>div.center>nav>ul{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(80,80,80,.5);
 }
 header.roll>div.center>nav{
     position: absolute;
@@ -190,7 +180,7 @@ header.roll>div.center>div.head_util>div#srchBox>button{
     background: url(../../imgs/ic_search_b.png)no-repeat 64px 7px;
     opacity: 50%;
     text-align: left;
-    color: #fff;
+    color: white;
     text-indent: 10px;
     letter-spacing: -1px;
     line-height: 36px;
@@ -235,7 +225,7 @@ header>div.center:hover{
     position: relative;
     min-width: 1440px;
     margin: 0 auto; 
-    height: 320px;
+    height: 330px;/*호버할때 li길이*/
     overflow: hidden; 
     transition: all .7s ease-out;
 }
@@ -252,14 +242,14 @@ header>div.center:hover>nav{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 320px;
 }
 header>div.center:hover>nav>ul{
     display: flex;
     justify-content: center;
     text-align: center;
     width: 100%;
-    background-color: white;
+    height: 330px;/*호버할때 li길이*/
+    background-color:white;
     box-shadow: 0 2px 5px rgba(80,80,80,.5);
 }
 header>div.center:hover>nav>ul>li{
@@ -326,7 +316,7 @@ header>div.center:hover>div.head_util>div#srchBox>button{
     background: url(../../imgs/ic_search_b.png)no-repeat 64px 7px;
     opacity: 50%;
     text-align: left;
-    color: #fff;
+    color: white;
     text-indent: 10px;
     letter-spacing: -1px;
     line-height: 36px;

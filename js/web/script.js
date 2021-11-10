@@ -1,8 +1,8 @@
 $(function(){
     var rollHeader = 900;
-    $(window).scroll(function() {
+    $(window).scroll(function(){
     var scroll = getCurrentScroll();
-        if ( scroll >= rollHeader ) {
+        if ( scroll >= rollHeader ){
             $('header').addClass('roll');
         }
         else {
@@ -13,7 +13,7 @@ $(function(){
     function getCurrentScroll() {
         return window.pageYOffset || document.documentElement.scrollTop;
     }
-
+    /* .css({"transition": "all .7s ease-out"}) */
 
     //slide
     $('.post-wrapper').slick({
