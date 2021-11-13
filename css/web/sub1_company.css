@@ -150,6 +150,7 @@ main{
 }
 .containCEO{
     margin: 0 auto;
+    margin-top: 80px;
     width: 1440px;
     display: flex;
     justify-content: space-between;

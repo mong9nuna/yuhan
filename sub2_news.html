@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유한_뉴스룸</title>
+    <style>
+        @font-face {
+            font-family: 'HangeulNuri-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'HangeulNuri-Bold', 'Nanum Gothic', sans-serif, ;
+        }
+
+        .centerAll {
+            margin: 0 auto;
+            width: 1920px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/web/header.css">
+    <link rel="stylesheet" href="css/web/sub1_company.css">
+    <link rel="stylesheet" href="css/web/sub2_news.css">
+    <link rel="stylesheet" href="css/web/footer.css">
+    <link rel="icon" href="imgs/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/web/sub1_script.js"></script>
+    <script src="js/web/sub2_script.js"></script>
+</head>
+
+<body>
+    <div class="centerAll">
+        <header>
+            <div class="center">
+                <a href="index.html">
+                    <h1 class="hidden">유한킴벌리</h1>
+                    <!-- <img src="imgs/h1_logo.png" alt="유한킴벌리 로고" class="w t res siz"> -->
+                    <!-- <img src="imgs/h1_logo_m.png" alt="유한킴벌리 로고" class="t res"> -->
+                </a>
+                <p class="res t m"><span class="hidden">메뉴 바로가기</span></p>
+                <nav>
+                    <h2 class="hidden">메인 네비게이터</h2>
+                    <ul>
+                        <li>
+                            <a href="sub1_company.html">회사소개</a>
+                            <ul>
+                                <li><a href="sub1_company.html">유한킴벌리 소개</a></li>
+                                <li><a href="sub1_company.html">인재채용</a></li>
+                                <li><a href="sub1_company.html">사업현황</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="sub2_news.html">뉴스룸</a>
+                            <ul>
+                                <li><a href="sub2_news.html">보도자료</a></li>
+                                <li><a href="sub2_news.html">YK on AIR</a></li>
+                                <li><a href="sub2_news.html">그래픽 뉴스</a></li>
+                                <li><a href="sub2_news.html">공지사항</a></li>
+                                <li><a href="sub2_news.html">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">지속가능경영</a>
+                            <ul>
+                                <li><a href="#">우리강산 푸르게 푸르게</a></li>
+                                <li><a href="#">공유가치창출(CSV)</a></li>
+                                <li><a href="#">환경경영</a></li>
+                                <li><a href="#">동반성장</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객중심경영</a>
+                            <ul>
+                                <li><a href="#">고객응대절차</a></li>
+                                <li><a href="#">자주묻는질문</a></li>
+                                <li><a href="#">문의접수</a></li>
+                                <li><a href="#">소비자교육</a></li>
+                                <li><a href="#">정보형 컨텐츠</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">브랜드 사이트</a>
+                            <ul>
+                                <li><a href="#">유아아동용품</a></li>
+                                <li><a href="#">여성 가정용품</a></li>
+                                <li><a href="#">시니어용품</a></li>
+                                <li><a href="#">스킨케어</a></li>
+                                <li><a href="#">산업위생용품</a></li>
+                                <li><a href="#">헬스케어</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="head_util">
+                    <div id="srchBox">
+                        <button class="hidden">제품검색</button>
+                        <form action="test.jsp">
+                            <input type="search" placeholder="| 제품명을 입력하세요.">
+                            <input type="image" src="imgs/ic_search.png" alt="검색">
+                            <p class="close"><img src="imgs/ic_close_search.png" alt="닫기"></p>
+                        </form>
+                    </div>
+                    <div id="lang" class="on">
+                        <dl>
+                            <dt class="hidden">언어변경</dt>
+                            <dd class="on"><a href="#">KOR</a></dd>
+                            <dd><a href="#">ENG</a></dd>
+                            <dd><a href="#">中國語</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div><!-- center end -->
+            <div class="back"></div>
+        </header>
+        <main>
+            <h2 class="hidden">뉴스룸 본문</h2>
+            <section class="sub2Banner">
+                <h3>뉴스룸</h3>
+                <div class="subNav">
+                    <ul>
+                        <li><a href="#btn1">진행중인 이벤트</a></li>
+                        <li><a href="#btn2">유한킴벌리 뉴스</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="event" id="btn1">
+                <h3 class="secTitle">진행중인 <span class="secTitleB">이벤트</span></h3>
+                <div class="eventInner">
+                    <div class="contents">
+                        <div class="rec">
+                            <div class="eventbox">
+                                <a href="#">
+                                    <img src="imgs/event1.jpg" alt="event1">
+                                    <h4>Biomass PE 적용으로 온실가스 배출량<br>저감에 기여하는 라네이처 생리대</h4>
+                                    <p>2021.10.27 ~ 2021.11.09</p>
+                                </a>
+                            </div>
+                            <div class="eventbox">
+                                <a href="#">
+                                    <img src="imgs/event2.png" alt="event2">
+                                    <h4>우리동네숲세권 서울 석파정 이벤트<br>#유한스타그램 #킴벌리캠페인</h4>
+                                    <p>2021.10.27 ~ 2021.11.03</p>
+                                </a>
+                            </div>
+                            <div class="eventbox">
+                                <a href="#">
+                                    <img src="imgs/event3.png" alt="event3">
+                                    <h4>숲관 챌린지 이벤트<br>#지구의 지구력 높이기</h4>
+                                    <p>2021.10.18 ~ 2021.11.05</p>
+                                </a>
+                            </div>
+                            <div class="eventbox">
+                                <a href="#">
+                                    <img src="imgs/event4.png" alt="event4">
+                                    <h4>EVENTㅣ전기 아끼기 챌린지<br>#클링시스템</h4>
+                                    <p>2021.10.14 ~ 2021.11.19</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- contents end -->
+                    <div class="contents">
+                        <div class="rec">
+                            <div class="eventbox">
+                                <a href="#">
+                                    <img src="imgs/event5.png" alt="event5">
+                                    <h4>EVENTㅣ멸종위기 동물 관심갖기 챌린지<br>#멸종위기 #동믈보호</h4>
+                                    <p>2021.10.27 ~ 2021.11.09</p>
+                                </a>
+                            </div>
+                            <div class="eventbox">
+                                <a href="#">
+                                    <img src="imgs/event6.png" alt="event6">
+                                    <h4>탄소흡수 이벤트<br>#남기지않고 #덜어먹기</h4>
+                                    <p>2021.10.27 ~ 2021.11.03</p>
+                                </a>
+                            </div>
+                            <div class="eventbox">
+                                <a href="#">
+                                    <img src="imgs/event7.png" alt="event7">
+                                    <h4>녹색 인증 제품 사용 이벤트<br>#홍수예방 #인증제품사용하기</h4>
+                                    <p>2021.10.18 ~ 2021.11.05</p>
+                                </a>
+                            </div>
+                            <div class="eventbox">
+                                <a href="#">
+                                    <img src="imgs/event8.png" alt="event8">
+                                    <h4>그대가 그린 그린웨딩 시즌3<br>#첫데이트 #서울숲</h4>
+                                    <p>2021.10.14 ~ 2021.11.19</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- contents end -->
+                    <div class="contents">
+                        <div class="rec">
+                            <div class="eventbox">
+                                <a href="#">
+                                    <img src="imgs/event9.jpg" alt="event9">
+                                    <h4>EVENTㅣ일산 포레스트아웃팅스 오픈<br>#우리동네숲세권 #경기도일산</h4>
+                                    <p>2021.10.27 ~ 2021.11.09</p>
+                                </a>
+                            </div>
+                            <div class="eventbox">
+                                <a href="#">
+                                    <img src="imgs/event10.png" alt="event10">
+                                    <h4>줍기 장려 캠페인, 쓰봉쓰루!<br>#우리강산 #푸르게 #푸르게</h4>
+                                    <p>2021.10.27 ~ 2021.11.03</p>
+                                </a>
+                            </div>
+                            <div class="eventbox">
+                                <a href="#">
+                                    <img src="imgs/event11.jpg" alt="event11">
+                                    <h4>하기스의 지속가능성 캠페인<br>#육아포럼 #기저귀 #사용백서</h4>
+                                    <p>2021.10.18 ~ 2021.11.05</p>
+                                </a>
+                            </div>
+                            <div class="eventbox">
+                                <a href="#">
+                                    <img src="imgs/event12.png" alt="event12">
+                                    <h4>EVENT 2021 유한킴벌리 TVCF<br>런칭 기념 인스타그램이벤트</h4>
+                                    <p>2021.10.14 ~ 2021.11.19</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- contents end -->
+                </div>
+                <!-- <p class="btnprev">
+                    <img src="imgs/arrowL.png" alt="left">
+                </p> -->
+                <p class="btnplay">
+                    <img src="imgs/play.png" alt="play">
+                </p>
+                <p class="btnpause">
+                    <img src="imgs/pause.png" alt="pause">
+                </p>
+                <!-- <p class="btnnext">
+                    <img src="imgs/arrowR.png" alt="left">
+                </p> -->
+            </section>
+            </section>
+            <section class="sub2News" id="btn2">
+                <h3 class="secTitle"><span class="secTitleB">유한킴벌리</span> 뉴스</h3>
+                <div class="containsNews">
+                    <div class="srch_area_box">
+                        <div class="inner">
+                            <span class="icons"></span>
+                            <select name="searchType" id="searchType" title="검색구분">
+                                <option value="title">제목</option>
+                                <option value="text">내용</option>
+                            </select>
+                            <input type="text" name="searchKeyword" id="searchKeyword" title="검색어">
+                            <button type="button"><img src="imgs/btn_srch.jpg"alt="검색"></button>
+                        </div>
+                    </div>
+                    <div id="content_inner" class="newsroomNotice">
+                        <p class="pageList">총 200 건 [1/20 페이지]</p>
+                        <table class="table_col list">
+                            <tbody>
+                                <tr>
+                                    <td class="num">1</td>
+                                    <td class="title"><a href="#">유한킴벌리, 대한민국 지속가능성대회 3개부문 수상. 진재승 대표이사, 대한민국 지속가능경영 최고경영자상 수상</a></td>
+                                    <td class="date">2021-11-03</td>
+                                    <td class="count">2,216</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">2</td>
+                                    <td class="title"><a href="#">유한킴벌리 스카트, 사계절 습기제거제 3종 신규 출시</a></td>
+                                    <td class="date">2021-10-13</td>
+                                    <td class="count">2,486</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">3</td>
+                                    <td class="title"><a href="#">유한킴벌리 그린핑거, ‘힘센보습 인텐시브’ 라인 선보여</a></td>
+                                    <td class="date">2021-10-07</td>
+                                    <td class="count">24,943</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">4</td>
+                                    <td class="title"><a href="#">유한킴벌리, ‘하기스 네이처메이드’ 신제품 출시</a></td>
+                                    <td class="date">2021-09-27</td>
+                                    <td class="count">2,918</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">5</td>
+                                    <td class="title"><a href="#">유한킴벌리, 생활용품 업계 최초로 메타버스 얼라이언스 가입</a></td>
+                                    <td class="date">2021-09-15</td>
+                                    <td class="count">35,303</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">6</td>
+                                    <td class="title"><a href="#">유한킴벌리 몽골 사막화방지 활동, 유엔사막화방지협약 사무총장상 수상</a>
+                                    </td>
+                                    <td class="date">2021-09-14</td>
+                                    <td class="count">489</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">7</td>
+                                    <td class="title"><a href="#">소중한 이들에게 완벽한 케어를 선물해 주세요. 유한킴벌리, ‘크리넥스 안심케어 건강위생 선물세트’ 출시</a></td>
+                                    <td class="date">2021-09-10</td>
+                                    <td class="count">440</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">8</td>
+                                    <td class="title"><a href="#">유한킴벌리, ‘기후위기 솔루션, 숲의 역할’ 담은 캠페인 광고 런칭</a></td>
+                                    <td class="date">2021-09-01</td>
+                                    <td class="count">26,994</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">9</td>
+                                    <td class="title"><a href="#">유한킴벌리, ‘포용과 다양성위원회’ 출범</a></td>
+                                    <td class="date">2021-08-17</td>
+                                    <td class="count">348</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">10</td>
+                                    <td class="title"><a href="#">“‘좋은느낌 힘내라 딸들아’ 캠페인” 유한킴벌리, 발달장애 여성 생리대 사용 교육 지원사업 본격화</a></td>
+                                    <td class="date">2021-08-05</td>
+                                    <td class="count">1,809</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--  START :paginate -->
+                        <p class="paginate">
+                            <a href="#" class="btn_first"><i class="fas fa-angle-left"></i></a>
+                            <span class="number_area">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">7</a>
+                                <a href="#">8</a>
+                                <a href="#">9</a>
+                                <a href="#">10</a>
+                            </span>
+                            <a href="#" class="btn_last"><i class="fas fa-angle-right"></i></a>
+                        </p>
+                        <!--  //END :paginate -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h2 class="hidden">유한킴벌리 마무리 내용</h2>
+            <div class="footerTop">
+                <div class="innerTop">
+                    <h3 class="hidden">유한킴벌리 브랜드 바로가기</h3>
+                    <ul>
+                        <li><a href="#"><img src="imgs/brand1.jpg" alt="더블하트로고"></a></li>
+                        <li><a href="#"><img src="imgs/brand2.jpg" alt="뽀삐로고"></a></li>
+                        <li><a href="#"><img src="imgs/brand3.jpg" alt="마이비데로고"></a></li>
+                        <li><a href="#"><img src="imgs/brand4.jpg" alt="스카트로고"></a></li>
+                        <li><a href="#"><img src="imgs/brand5.jpg" alt="tn로고"></a></li>
+                        <li><a href="#"><img src="imgs/brand6.jpg" alt="그린핑거로고"></a></li>
+                        <li><a href="#"><img src="imgs/brand7.jpg" alt="좋은느낌로고"></a></li>
+                        <li><a href="#"><img src="imgs/brand8.jpg" alt="화이트로고"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBtm">
+                <div class="innerBtm">
+                    <div class="util_link">
+                        <h3><a href="#"><img src="imgs/h1_logo.png" alt="유한킴벌리 로고"></a></h3>
+                        <dl class="utilBtm">
+                            <dt class="hidden">하단 유틸메뉴</dt>
+                            <dd class="txt"><a href="#">찾아오시는 길</a> </dd>
+                            <dd class="txt"><a href="#">개인정보 처리방침</a></dd>
+                        </dl>
+                    </div>
+                    <div class="sns_link">
+                        <a href="#"><img src="imgs/sns_footer1.png" alt="페이스북"></a>
+                        <a href="#"><img src="imgs/sns_footer2.png" alt="인스타그램"></a>
+                        <a href="#"><img src="imgs/sns_footer3.png" alt="유튜브"></a>
+                        <a href="#"><img src="imgs/sns_footer4.png" alt="네이버블로그"></a>
+                    </div>
+                    <address>
+                        <p>대표자 : 진재승 &#124;</p>
+                        <p>주소 : 서울시 송파구 올림픽로 300 롯데월드타워 29층 (우)05551</p>
+                        <p>사업자번호 : 120-81-11436 &#124;</p>
+                        <p><a href="#">회사대표 이메일</a></p>
+                        <p>제품관련 문의 : 080-022-7007 &#124;</p>
+                        <p>회사관련 문의 : 02-6411-0100</p>
+                        <p>Copyright © Yuhan-Kimberly. All right Reserved.</p>
+                    </address>
+                </div><!-- innerBtm end -->
+            </div><!-- footerBtm end -->
+        </footer>
+    </div>
+    </div><!-- centerAll end -->
+</body>
+
+</html>

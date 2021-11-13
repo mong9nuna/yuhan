@@ -1,0 +1,283 @@
+main{
+    display: block;
+    margin: 0 auto;
+    width: 1920px;
+    overflow: hidden;
+}
+.secTitle {
+    text-align: center;
+    font-size: 36px;
+    line-height: 54px;
+    font-family: 'HangeulNuri-Bold', sans-serif;
+}
+
+.secTitleB {
+    color: #00aae7;
+}
+
+/* 메인 배너 */
+
+/* 뉴스룸 */
+.sub2Banner{
+    margin-bottom: 180px;
+    width: 100%;
+    height: 500px;
+    background: url(../../imgs/sub2Banner.png) no-repeat;
+    position: relative;
+}
+.sub2Banner>h3{
+    position: absolute;
+    top: 205px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 90px;
+    width: 100%;
+    font-family: 'HangeulNuri-Bold', sans-serif;
+    color: whitesmoke;
+}
+.sub2Banner .subNav{
+    position: absolute;
+    left: 240px;
+    bottom: -40px;
+    width: 1440px;
+    height: 80px;
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 5px rgba(80, 80, 80, .5);
+}
+.sub2Banner .subNav>ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.sub2Banner .subNav>ul>li{
+    font-family: 'HangeulNuri-Bold', sans-serif;
+    width:720px;
+}
+.sub2Banner .subNav>ul>li>a{
+    color: #666666;
+    font-size: 18px;
+    width: 720px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub2Banner .subNav>ul>li>a:hover{
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    border-bottom: #00aae7 solid 4px;
+    transition: all .1s ease-out;
+}
+
+/* 진행중인 이벤트 */
+.event {
+    height: 628px;
+    margin: 180px auto;
+    position: relative;
+}
+.event .btnprev{
+    position: absolute;
+    left: 890px;
+    bottom: 0;
+    z-index: 701;
+}
+.event .btnplay{
+    display: none;
+    position: absolute;
+    left: 950px;
+    bottom: 0;
+}
+.event .btnplay.on{
+    display: inline-block;
+    position: absolute;
+    left: 950px;
+    bottom: 0;
+}
+.event .btnpause{
+    display:inline-block;
+    position: absolute;
+    left: 950px;
+    bottom: 0;
+}
+.event .btnpause.on{
+    display: none;
+    position: absolute;
+    left: 950px;
+    bottom: 0;
+}
+.event .btnnext{
+    position: absolute;
+    left: 1010px;
+    bottom: 0; 
+    z-index: 700;
+}
+.event .eventInner {
+    width: 100%;
+    height: 574px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    white-space: nowrap;
+}
+
+.event .eventInner .contents {
+    width: 1440px;
+    height: 494px;
+    margin: 0 auto;
+    
+}
+.event .eventInner .contents .rec{
+    width: 1440px;
+    height: 494px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.event .eventInner .contents .rec .eventbox{
+    width: 330px;
+    height: 434px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    position: relative;
+}
+.event .eventInner .contents .rec .eventbox:hover{
+    box-shadow: 4px 4px 5px rgba(80, 80, 80, .5);
+    transform: scale(1.05);
+    transition: all .3s ease-out;
+}
+.event .eventInner .contents .rec .eventbox>a{
+    display: block;
+    width: 330px;
+    height: 434px;
+    margin: 0 auto;
+    color: #222;
+}
+.event .eventInner .contents .rec .eventbox>a>img{
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 15px 0 15px 15px;
+}
+.event .eventInner .contents .rec .eventbox>a>h4{
+    margin: 10px 0 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.event .eventInner .contents .rec .eventbox>a>p{
+    margin: 15px 0 10px 20px;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 유한킴벌리 뉴스 */
+.sub2News{}
+.sub2News>h3{
+    margin: 80px 0;
+}
+.containsNews{
+    margin: 0 auto;
+    width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.containsNews .srch_area_box{
+    width: 1440px;
+    height: 150px;
+    text-align: center;
+    font-family:'Nanum Gothic', sans-serif;
+    background: #f5f5f5;
+}
+.containsNews .srch_area_box .inner{
+    margin-top: 54px;
+    align-items: center;
+}
+.containsNews .srch_area_box select {
+    width: 190px;
+    height: 40px;
+    padding: 0 20px;
+    background: #fff;
+    border: 0;
+    font-size: 15px;
+    vertical-align: top;
+}
+.containsNews .srch_area_box input {
+    width: 472px;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    vertical-align: top;
+}
+button{
+    margin-left: -10px;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: none;
+}
+button>img{
+    vertical-align: top;
+    text-align: left;
+}
+.newsroomNotice{
+    font-family:'Nanum Gothic', sans-serif;
+}
+.pageList{
+    float: right;
+    margin: 50px 0 10px 0;
+}
+.table_col{
+    width: 1440px;
+    border-top: 3px solid #333;
+    margin-bottom: 50px;
+}
+.table_col>tbody>tr{
+    box-sizing: border-box;
+}
+.table_col>tbody>tr>td{
+    height: 55px;
+    padding: 0 10px;
+    font-size: 16px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(80, 80, 80, .2);
+}
+.table_col>tbody>tr>td.num{
+    width: 90px;
+    padding: 0 10px;
+    text-align: center;
+}
+.table_col>tbody>tr>td.title>a{
+    color: #222;
+}
+.table_col>tbody>tr>td.date{
+    width: 130px;
+    padding: 0 10px;
+    text-align: center;
+}
+.table_col>tbody>tr>td.count{
+    width: 90px;
+    padding: 0 10px;
+    text-align: center;
+}
+.paginate{
+    text-align: center;
+}
+.paginate .btn_first{
+    margin-right: 20px;
+    color: #222;
+}
+.number_area>a{
+    display: inline-block;
+    width: 50px;
+    font-family:'Nanum Gothic', sans-serif;
+    color: #222;
+}
+.paginate .btn_last{
+    margin-left: 20px;
+    color: #222;
+}
