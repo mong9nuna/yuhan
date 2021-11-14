@@ -1,0 +1,208 @@
+main{
+    display: block;
+    margin: 0 auto;
+    width: 1920px;
+    overflow: hidden;
+}
+.secTitle {
+    text-align: center;
+    font-size: 36px;
+    line-height: 54px;
+    font-family: 'HangeulNuri-Bold', sans-serif;
+}
+
+.secTitleB {
+    color: #00aae7;
+}
+
+/* 메인 배너 */
+
+/* 지속가능경영 */
+.sub3Banner{
+    margin-bottom: 180px;
+    width: 100%;
+    height: 500px;
+    background: url(../../imgs/sub3Banner.png) no-repeat;
+    position: relative;
+}
+.sub3Banner>h3{
+    position: absolute;
+    top: 205px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 90px;
+    width: 100%;
+    font-family: 'HangeulNuri-Bold', sans-serif;
+    color: whitesmoke;
+}
+.sub3Banner .subNav{
+    position: absolute;
+    left: 240px;
+    bottom: -40px;
+    width: 1440px;
+    height: 80px;
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 5px rgba(80, 80, 80, .5);
+}
+.sub3Banner .subNav>ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.sub3Banner .subNav>ul>li{
+    font-family: 'HangeulNuri-Bold', sans-serif;
+    width:480px;
+}
+.sub3Banner .subNav>ul>li>a{
+    color: #666666;
+    font-size: 18px;
+    width: 480px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub3Banner .subNav>ul>li>a:hover{
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    border-bottom: #00aae7 solid 4px;
+    transition: all .1s ease-out;
+}
+
+/* 우리강산 푸르게 푸르게 */
+.sub3Moun{
+    margin: 0 auto;
+    margin-bottom: 180px;
+    width: 1440px;
+}
+.sub3Moun .txtbox{
+    margin: 80px 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+}
+.sub3Moun .txtbox>p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #222;
+}
+.sub3Moun .txtbox>p>span{
+    color: #1F8CDD;
+}
+.containVision{
+    width: 1440px;
+    height: 680px;
+    font-family:'Nanum Gothic', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.containVision>div[class^="symbol"]{
+    width: 300px;
+    height: 300px;
+}
+.containVision>div[class^="symbol"]>img{
+    padding: 0 0 25px 49px;
+}
+.containVision>div[class^="symbol"]>p{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+    text-align: center;
+    color: #222;
+}
+.containVision>div[class^="symbol"]>p:last-of-type{
+    color:  #1F8CDD;
+}
+/* 환경경영 */
+.sub3Env{
+    margin-bottom: 180px;
+}
+.containEnv{
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 1920px;
+    height: 700px;
+    background: url(../../imgs/sub3Env.png);
+}
+.containEnv .txtbox{
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 1440px;
+    height: 402px;
+    text-align: center;
+    font-family:'Nanum Gothic', sans-serif;
+    color: white;
+
+}
+.containEnv .txtbox>h4{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+    padding-bottom: 50px;
+}
+.containEnv .txtbox>p{
+    font-size: 22px;
+    line-height: 33px;
+}
+.containEnv .txtbox>p>span{
+    font-weight: bold;
+}
+
+/* 사회책임활동 */
+.sub3Society{
+    margin: 0 auto;
+    width: 1920px;
+    font-family:'Nanum Gothic', sans-serif;
+}
+.containSo{
+    margin: 0 auto;
+    width: 1440px;
+    height: 638px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-between;
+}
+.containSo>p{
+    width: 1440px;
+    margin: 80px 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+}
+.containSo>div[class^="society"]{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+.containSo>div[class^="society"]>p{
+    text-align: center;
+    margin-top: 173px;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: bold;
+}
+.containSo>div[class^="society"]:hover{
+    transform: .8s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: inset 4px 4px 7px rgba(80, 80, 80, 7);
+}
+.containSo .society1{
+    background-color: #3B6AAD;
+}
+.containSo .society1>p{
+    color: whitesmoke;
+}
+.containSo .society2{
+    background-color: whitesmoke;
+}
+.containSo .society2>p{
+    color: #00aae7;
+}
+.containSo .society3{
+    background-color: #1F8CDD;
+}
+.containSo .society3>p{
+    color: whitesmoke;
+}

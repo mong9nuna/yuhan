@@ -1,5 +1,19 @@
-//event
-$(function () {
+$(function(){
+    var rollHeader = 500;
+    $(window).scroll(function(){
+    var scroll = getCurrentScroll();
+        if ( scroll >= rollHeader ){
+            $('header').addClass('roll');
+        }
+        else {
+            $('header').removeClass('roll');
+        }
+    });
+    function getCurrentScroll() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+    }
+
+    //event
     $('.eventInner').slick({
         slide:'div',
         slidesToShow: 1,
@@ -12,6 +26,7 @@ $(function () {
 		nextArrow : "<p class='btnnext'><img src='imgs/arrowR.png' alt=right'></p>",
 
     });
+    
 
     $('.btnpause').click(function(){
         $('.eventInner').slick('slickPause');
@@ -32,5 +47,12 @@ $(function () {
     $('#btn2').click(function(){
         var offset = $('#btn2').offset();
         $('html, body').animate({scrollTop : offset.top}), 400;
+    });
+
+    //lang
+    $("#lang").click(function(){
+
+        $("#lang").toggleClass("on");
+
     });
 });

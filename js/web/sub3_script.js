@@ -13,14 +13,14 @@ $(function(){
         return window.pageYOffset || document.documentElement.scrollTop;
     }
 
-     //lang
-     $("#lang").click(function(){
+    //lang
+    $("#lang").click(function(){
 
         $("#lang").toggleClass("on");
 
     });
 
-    //sub1Banner remote
+    //sub3Banner remote
     $('#btn1').click(function(){
         var offset = $('#btn1').offset();
         $('html, body').animate({scrollTop : offset.top}, 400);
@@ -33,5 +33,4 @@ $(function(){
         var offset = $('#btn3').offset();
         $('html, body').animate({scrollTop : offset.top}, 400);
     });
-
 });
